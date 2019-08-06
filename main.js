@@ -91,5 +91,5 @@ function addText() {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#002B69';
-    ctx.fillText('株式会社TAM', 80, 25);
+    ctx.fillText('ああああ', 80, 25);
 }
