@@ -16,28 +16,30 @@
 
 		<pre>
 			使い方:
-			1.Base Imageに背景画像を選択。
-			2.Cover imageに重ねる画像を選択。
-			3.downloadからダウンロード。
+			1.背景画像を選択。
+			2.重ねる画像を選択。
+			3.合成画像をダウンロード。
 			4.SNSのアイコンを設定！
 		</pre>
 
-		<div class="base-image">
-			Base Image<br>
-			<div class="upload"><input type="file" name="file" id="file"></div>
-			<canvas id="canvas"></canvas>
-		</div>
-		<div class="cover-image">
-			Cover Image<br>
-			<div class="upload"><input type="file" name="file2" id="file2"></div>
-			<canvas id="canvas2"></canvas>
+		<div class="src-image border">
+			<div class="base-image">
+				1.背景画像|Base Image<br>
+				<div class="upload"><input type="file" name="file" id="file"></div>
+				<canvas id="canvas"></canvas>
+			</div>
+			<div class="cover-image">
+				2.重ねる画像|Cover Image<br>
+				<div class="upload"><input type="file" name="file2" id="file2"></div>
+				<canvas id="canvas2"></canvas>
+			</div>
 		</div>
 		<div class="overlay-image">
-				Overlay Image<br>
+			3.合成画像|Overlay Image<br>
 			<canvas id="canvas3"></canvas>
-		</div>
-		<div class="result">
-			<div id="result"></div>
+			<div class="result">
+				<div id="result"></div>
+			</div>
 		</div>
 
 		<canvas id="canvasTrans" style="display:none"></canvas>
