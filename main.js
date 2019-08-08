@@ -103,7 +103,7 @@ function canvasDraw(imgSrc, ctx, file) {
       var dlLink = document.createElement('a');
       dlLink.href = data;
       dlLink.download = 'image.png';
-      dlLink.innerText = 'ダウンロード';
+      dlLink.innerText = 'Download';
       document.getElementById('result').appendChild(dlLink);
     }
     console.log("end   img.onload()");

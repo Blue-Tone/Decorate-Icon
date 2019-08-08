@@ -4,41 +4,56 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv=”Pragma” content=”no-cache”>
     <meta http-equiv=”Cache-Control” content=”no-cache”>
-    <title>Decorate Icon</title>
+    <title>アイデコ|Decorate Icon</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body> 
-    <h1>Decorate-Icon</h1>
-		Overlay images for SNS icon.<br>
-		<br>
-		usage:<br>
-		select 1 image.<br>
-		select 2 image.<br>
-		download image.<br>
-		set SNS icon!<br>
-		<br>
-		Base Image<br>
-		<div class="upload"><input type="file" name="file" id="file"></div>
-		<canvas id="canvas"></canvas>
-		<br>
-		Cover Image<br>
-		<div class="upload"><input type="file" name="file2" id="file2"></div>
-		<canvas id="canvas2"></canvas>
-		<br>
-		Overlay Image<br>
-		<canvas id="canvas3"></canvas>
-		<br>
-		Dowunload<br>
-		<div id="result"></div>
+			<h1>アイデコ</h1>
+			<h2>アイコン・デコレート|Decorate-Icon</h2>
+		２つの画像を重ねるサービスです。<br>
+
+		<pre>
+			使い方:
+			1.Base Imageに背景画像を選択。
+			2.Cover imageに重ねる画像を選択。
+			3.downloadからダウンロード。
+			4.SNSのアイコンを設定！
+		</pre>
+
+		<div class="base-image">
+			Base Image<br>
+			<div class="upload"><input type="file" name="file" id="file"></div>
+			<canvas id="canvas"></canvas>
+		</div>
+		<div class="cover-image">
+			Cover Image<br>
+			<div class="upload"><input type="file" name="file2" id="file2"></div>
+			<canvas id="canvas2"></canvas>
+		</div>
+		<div class="overlay-image">
+				Overlay Image<br>
+			<canvas id="canvas3"></canvas>
+		</div>
+		<div class="result">
+			<div id="result"></div>
+		</div>
 
 		<canvas id="canvasTrans" style="display:none"></canvas>
 
-		readme and src: https://github.com/Blue-Tone/Decorate-Icon<br>
-		site url: https://blue-tone.github.io/Decorate-Icon/<br>
-		
 		<pre>
+			Overlay images for SNS icon.
+
+			usage:
+			1.select Base Image.
+			2.select Cover image.
+			3.download image.
+			4.set SNS icon!
+
+			<a href="https://github.com/Blue-Tone/Decorate-Icon">GitHub(readme and src)</a>
+			<a href="https://blue-tone.github.io/Decorate-Icon/">url https://blue-tone.github.io/Decorate-Icon/</a>
+
 			ToDo:
 				URLから画像指定
 				透明度設定
