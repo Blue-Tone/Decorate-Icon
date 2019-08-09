@@ -104,6 +104,8 @@ function canvasDraw(imgSrc, ctx, file) {
       dlLink.href = data;
       dlLink.download = 'image.png';
       dlLink.innerText = 'Download';
+      var ele = document.getElementById('result').firstChild;
+      if(ele)document.getElementById('result').removeChild(ele);
       document.getElementById('result').appendChild(dlLink);
     }
     console.log("end   img.onload()");
