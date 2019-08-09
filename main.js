@@ -152,7 +152,7 @@ function makeTransparentImg(img, alpha){
 	length = imgData.length;
 	// set every fourth value to alpha
 	for(var i=3; i < length; i+=4){
-		imgData[i] = alpha;
+		imgData[i] = imgData[i] * alpha/100;
 	}
   img.data = imgData;
   return img;

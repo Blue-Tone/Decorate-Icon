@@ -16,6 +16,10 @@ div {
   border: solid 2px black;
 }
 
+.eye-catch {
+  padding: 10px;
+  border: solid 1px Gray;
+}
 
 .src-image {
   border: none;
