@@ -104,8 +104,13 @@ function canvasDraw(imgSrc, ctx, file) {
       dlLink.href = data;
       dlLink.download = 'image.png';
       dlLink.innerText = 'Download';
+      dlLink.onClick="ga('send', 'event', 'download', 'click', 'overlayImage');";
+
+      // 前のリンク削除
       var ele = document.getElementById('result').firstChild;
       if(ele)document.getElementById('result').removeChild(ele);
+      
+      // リンク追加
       document.getElementById('result').appendChild(dlLink);
     }
     console.log("end   img.onload()");
