@@ -104,19 +104,24 @@ function canvasDraw(imgSrc, ctx, file) {
       dlLink.href = data;
       dlLink.download = 'image.png';
       dlLink.innerText = 'Download';
-      dlLink.onClick=function() {
-        ga('send', 'event', 'download', 'click', 'overlayImage');
-      };
 
       // 前のリンク削除
       var ele = document.getElementById('result').firstChild;
       if(ele)document.getElementById('result').removeChild(ele);
       
       // リンク追加
-      document.getElementById('result').appendChild(dlLink);
+      var eleResult = document.getElementById('result');
+      eleResult.appendChild(dlLink);
     }
     console.log("end   img.onload()");
   }
+}
+
+// ダウンロードボタンクリック処理
+function downloadClicked(){
+  console.log("start downloadClicked()");
+  ga('send', 'event', 'download', 'click', 'overlayImage');
+  console.log("end   downloadClicked()");
 }
 
 // Canvas上にテキストを表示する
