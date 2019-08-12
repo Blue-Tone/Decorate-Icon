@@ -13,11 +13,19 @@
 		<meta property="og:description" content="SNSのアイコンにうっすら画像を重ねるWEBサービス。
 		・簡単操作
 		・画像を自分で選べます
-		・スマホからも使えます" />
+		・スマホからも使えます
+		#アイデコ" />
 
 		<title>アイデコ|Decorate Icon</title>
-    <script type="text/javascript" src="main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+		<script src="js/jquery.share-buttons.js"></script> 
+    <script type="text/javascript" src="main.js"></script> 
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<script>
+			$(function(){
+			 $("#share").shareButtons();
+			});
+		 </script> 
   </head>
   <body> 
 			<h1>アイデコ</h1>
@@ -68,9 +76,10 @@
 			<a href="https://blue-tone.github.io/Decorate-Icon/">this site url: https://blue-tone.github.io/Decorate-Icon/</a>
 			<a href="https://emoji-gen.ninja">外部サイト：絵文字ジェネレーター</a>
 
-			ハッシュタグ：#アイデコ
+			ハッシュタグ： #アイデコ
 			
 		</pre>
+		<div id="share"></div>
 
   </body>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
