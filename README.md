@@ -1,4 +1,8 @@
 # Decorate Icon
+
+WEBサービスURL
+https://blue-tone.github.io/Decorate-Icon/
+
 Overlay images for SNS icon.
 
 usage:  
