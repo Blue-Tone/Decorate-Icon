@@ -1,0 +1,32 @@
+div {
+  box-sizing: border-box;
+
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.base-image, .cover-image {
+  float: left;
+  border: solid 2px black;
+  width: 50%;
+}
+
+.overlay-image {
+  border: solid 2px black;
+}
+
+.eye-catch {
+  padding: 10px;
+  border: solid 1px Gray;
+}
+
+.src-image {
+  border: none;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
